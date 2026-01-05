@@ -1,235 +1,233 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Masajes • Bienestar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masajes • Bienestar</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f4efe9;
-      color: #4a3b32;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4efe9;
+  color: #4a3b32;
+}
 
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 500;
-    }
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
 
-    /* HEADER */
-    header {
-      background-color: #c9b8a5;
-      text-align: center;
-      padding-bottom: 40px;
-    }
+/* HEADER */
+header {
+  background-color: #c9b8a5;
+  text-align: center;
+  padding-bottom: 40px;
+}
 
-    .portada {
-      height: 220px;
-      background-image:
-        linear-gradient(
-          to bottom,
-          rgba(0,0,0,0.15),
-          rgba(0,0,0,0.05),
-          rgba(244,239,233,1)
-        ),
-        url("portada.jpg");
-      background-size: cover;
-      background-position: center;
-    }
+.portada {
+  height: 220px;
+  background-image:
+    linear-gradient(to bottom,
+      rgba(0,0,0,0.15),
+      rgba(0,0,0,0.05),
+      rgba(244,239,233,1)
+    ),
+    url("portada.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
-    header h1 {
-      margin: 30px 0 8px;
-      font-size: 32px;
-    }
+header h1 {
+  margin: 30px 0 8px;
+  font-size: 32px;
+}
 
-    header p {
-      margin: 0;
-      font-size: 15px;
-      letter-spacing: 0.5px;
-    }
+header p {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
 
-    /* SECCIONES */
-    section {
-      padding: 60px 25px;
-      max-width: 900px;
-      margin: auto;
-    }
+/* SECCIONES */
+section {
+  padding: 60px 25px;
+  max-width: 900px;
+  margin: auto;
+}
 
-    section h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 26px;
-    }
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
 
-    .texto-suave {
-      max-width: 600px;
-      margin: auto;
-      text-align: center;
-      line-height: 1.7;
-      font-size: 15px;
-    }
+.texto-suave {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 15px;
+}
 
-    /* BLOQUE CHAKRA */
-    .bloque-chakra {
-      background-color: #f3ede6;
-      border-radius: 30px;
-      padding: 45px 30px;
-      margin-top: 45px;
-    }
+/* BLOQUE CHAKRA */
+.bloque-chakra {
+  background-color: #f3ede6;
+  border-radius: 30px;
+  padding: 45px 30px;
+  margin-top: 45px;
+}
 
-    .bloque-chakra p {
-      text-align: center;
-      max-width: 620px;
-      margin: auto;
-      line-height: 1.8;
-      font-size: 15px;
-    }
+.bloque-chakra p {
+  text-align: center;
+  max-width: 620px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 15px;
+}
 
-    .lista-tecnicas {
-      margin-top: 35px;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 14px 32px;
-    }
+.lista-tecnicas {
+  margin-top: 35px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 32px;
+}
 
-    .lista-tecnicas li {
-      font-size: 14px;
-      color: #6b4f3f;
-      position: relative;
-      padding-left: 18px;
-    }
+.lista-tecnicas li {
+  font-size: 14px;
+  color: #6b4f3f;
+  position: relative;
+  padding-left: 18px;
+}
 
-    .lista-tecnicas li::before {
-      content: "✧";
-      position: absolute;
-      left: 0;
-      color: #8b6f5a;
-    }
+.lista-tecnicas li::before {
+  content: "✧";
+  position: absolute;
+  left: 0;
+  color: #8b6f5a;
+}
 
-    /* TARJETAS */
-    .tarjetas {
-      display: flex;
-      flex-direction: column;
-      gap: 60px;
-      margin-top: 40px;
-    }
+/* TARJETAS */
+.tarjetas {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 40px;
+}
 
-    .tarjeta {
-      background-color: #ffffff;
-      border-radius: 28px;
-      padding: 40px 32px;
-      max-width: 520px;
-      margin: auto;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-      text-align: center;
-    }
+.tarjeta {
+  background-color: #ffffff;
+  border-radius: 28px;
+  padding: 40px 32px;
+  max-width: 520px;
+  margin: auto;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  text-align: center;
+}
 
-    .foto-masaje {
+.foto-masaje {
   width: 100%;
-  max-width: 250px;
+  max-width: 260px;
   height: 180px;
   object-fit: cover;
   border-radius: 18px;
   margin: 0 auto 22px;
   display: block;
-  opacity: 0.95;
 }
 
+.tarjeta h3 {
+  margin-bottom: 15px;
+  color: #6b4f3f;
+  font-size: 22px;
+}
 
-    .tarjeta h3 {
-      margin-bottom: 15px;
-      color: #6b4f3f;
-      font-size: 22px;
-    }
+.tarjeta p {
+  font-size: 14.5px;
+  line-height: 1.6;
+}
 
-    .tarjeta p {
-      font-size: 14.5px;
-      line-height: 1.6;
-    }
+.tarjeta ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
 
-    .tarjeta ul {
-      padding-left: 0;
-      list-style: none;
-      margin-top: 18px;
-      margin-bottom: 20px;
-    }
+.tarjeta ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
 
-    .tarjeta ul li {
-      margin-bottom: 6px;
-      font-size: 14px;
-    }
+.boton-wsp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #7a9b87;
+  color: white;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  margin-top: 22px;
+}
 
-    .boton-wsp {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background-color: #7a9b87;
-      color: white;
-      text-decoration: none;
-      padding: 12px 28px;
-      border-radius: 30px;
-      font-size: 14px;
-      margin-top: 22px;
-    }
+.boton-wsp:hover {
+  background-color: #6b8f71;
+}
 
-    .boton-wsp:hover {
-      background-color: #6b8f71;
-    }
+/* GIFT CARD */
+.gift {
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 50px 30px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
 
-    /* GIFT CARD */
-    .gift {
-      background-color: #ffffff;
-      border-radius: 30px;
-      padding: 50px 30px;
-      text-align: center;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-    }
+.gift p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.7;
+  font-size: 15px;
+}
 
-    .gift p {
-      max-width: 600px;
-      margin: auto;
-      line-height: 1.7;
-      font-size: 15px;
-    }
+/* CONTACTO */
+.contacto {
+  text-align: center;
+  margin-top: 60px;
+}
 
-    /* CONTACTO */
-    .contacto {
-      text-align: center;
-      margin-top: 60px;
-    }
+.iconos {
+  margin-top: 20px;
+}
 
-    .iconos {
-      margin-top: 20px;
-    }
+.iconos a {
+  margin: 0 14px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #6b4f3f;
+}
 
-    .iconos a {
-      margin: 0 14px;
-      font-size: 15px;
-      text-decoration: none;
-      color: #6b4f3f;
-    }
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 26px;
+  }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 26px;
-      }
+  .portada {
+    height: 180px;
+  }
 
-      .portada {
-        height: 180px;
-      }
-
-      section {
-        padding: 45px 20px;
-      }
-    }
-  </style>
+  section {
+    padding: 45px 20px;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -243,16 +241,15 @@
 <section>
   <h2>Mi forma de trabajar</h2>
   <p class="texto-suave">
-Cada sesión es distinta.<br>
-Escucho tu cuerpo, tu momento y lo que necesitás hoy.<br>
-<br>
-Trabajo integrando distintas técnicas para acompañar procesos físicos, emocionales y energéticos, o simplemente regalarte un espacio de descanso profundo.
+    Cada sesión es distinta.<br>
+    Escucho tu cuerpo, tu momento y lo que necesitás hoy.<br><br>
+    Trabajo integrando distintas técnicas para acompañar procesos físicos,
+    emocionales y energéticos, o simplemente regalarte un espacio de descanso profundo.
   </p>
 
   <div class="bloque-chakra">
     <p>
-      Es una propuesta que desarrollé a lo largo de todos mis años de experiencia.
-      <br><br>
+      Es una propuesta que desarrollé a lo largo de todos mis años de experiencia.<br><br>
       Antes de comenzar, realizamos una breve charla para conocer tus necesidades,
       y en base a eso creo una sesión personalizada que combina distintas técnicas.
     </p>
@@ -283,49 +280,40 @@ Trabajo integrando distintas técnicas para acompañar procesos físicos, emocio
         aliviar dolores, liberar tensiones, equilibrar la energía o relajarte profundamente.
       </p>
       <ul>
-        <li>75 minutos — $28.000</li>
-        <li>90 minutos — $35.000</li>
-        <li>120 minutos — $45.000</li>
+        <li>75 minutos — $30.000</li>
+        <li>90 minutos — $40.000</li>
+        <li>120 minutos — $50.000</li>
       </ul>
       <p>El valor a domicilio depende del tiempo deseado (Florida y alrededores).</p>
-      <a class="boton-wsp" href="https://wa.me/5491164423192?text=Hola,%20quiero%20reservar%20un%20Masaje%20Fusión">
-        ✆ Reservar por WhatsApp
-      </a>
+      <a class="boton-wsp" href="https://wa.me/5491164423192">✆ Reservar por WhatsApp</a>
     </div>
 
     <div class="tarjeta">
-      <img src="masaje-Descontracturante.jpg" class="foto-masaje">
+      <img src="masaje-descontracturante.jpg" class="foto-masaje">
       <h3>💪 Masaje Descontracturante</h3>
       <p>
         Masaje terapéutico de tejido profundo, ideal para liberar contracturas
         y tensiones musculares.
       </p>
       <ul>
-        <li>75 minutos — $28.000</li>
+        <li>75 minutos — $30.000</li>
         <li>Sesiones más largas a consultar</li>
       </ul>
-      <a class="boton-wsp" href="https://wa.me/5491164423192?text=Hola,%20quiero%20reservar%20un%20Masaje%20Descontracturante">
-        ✆ Reservar por WhatsApp
-      </a>
+      <a class="boton-wsp" href="https://wa.me/5491164423192">✆ Reservar por WhatsApp</a>
     </div>
 
     <div class="tarjeta">
-      <img src="masaje-Chakras.jpg" class="foto-masaje">
+      <img src="masaje-chakras.jpg" class="foto-masaje">
       <h3>🌈 Armonización de Chakras</h3>
       <p>
-        Sesión energética para equilibrar los chakras y reconectar con tu bienestar
-        físico, emocional y espiritual.
-        <br><br>
-        Recibirás un informe con el estado de tus chakras, ajustes y recomendaciones
-        para una energía alineada.
+        Sesión energética para equilibrar los chakras y reconectar
+        con tu bienestar físico, emocional y espiritual.
       </p>
       <ul>
-        <li>Sesión completa — $20.000</li>
-        <li>(presencial o a distancia)</li>
+        <li>Sesión completa — $25.000</li>
+        <li>Presencial o a distancia</li>
       </ul>
-      <a class="boton-wsp" href="https://wa.me/5491164423192?text=Hola,%20quiero%20reservar%20una%20Armonización%20de%20Chakras">
-        ✆ Reservar por WhatsApp
-      </a>
+      <a class="boton-wsp" href="https://wa.me/5491164423192">✆ Reservar por WhatsApp</a>
     </div>
 
   </div>
@@ -337,22 +325,19 @@ Trabajo integrando distintas técnicas para acompañar procesos físicos, emocio
     <p>
       Regalá bienestar.<br><br>
       Las gift cards pueden ser por un masaje específico o por un monto a elección.
-      Son ideales para cumpleaños, fechas especiales o simplemente para regalar
-      un momento de cuidado.<br><br>
-      Se entregan de forma digital o física.
+      Ideales para cumpleaños, fechas especiales o simplemente regalar un momento de cuidado.
     </p>
-    <a class="boton-wsp" href="https://wa.me/5491164423192?text=Hola,%20quiero%20consultar%20por%20una%20Gift%20Card">
-      ✆ Consultar Gift Card
-    </a>
+    <a class="boton-wsp" href="https://wa.me/5491164423192">✆ Consultar Gift Card</a>
   </div>
 </section>
 
 <section class="contacto">
   <h2>Contacto</h2>
   <p class="texto-suave">
-    Cada sesión es un espacio para bajar, escuchar el cuerpo<br>
-    y volver a vos.
+    Cada sesión es un espacio para bajar,<br>
+    escuchar el cuerpo y volver a vos.
   </p>
+
   <div class="iconos">
     <a href="https://www.instagram.com/marianne_masajesfusion" target="_blank">✧ Instagram</a>
     <a href="https://wa.me/5491164423192" target="_blank">✧ WhatsApp</a>
